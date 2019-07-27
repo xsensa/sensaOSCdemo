@@ -74,7 +74,7 @@ class OSCDemoHomeViewController: UIViewController, OSCServerDelegate , UIPopover
         // determine which users are active
         for i in 0..<users.count {
             let val = nowDate.timeIntervalSince(users_last_time[i]) // in seconds
-            if val > 10 { // if we haven't heard from this user for 10 seconds, he is no longer active
+            if val > 5 { // if we haven't heard from this user for 2 seconds, he is no longer active
                 userviews[i].alpha = 0.2
             }
         }
