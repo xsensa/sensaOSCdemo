@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0742121D09C5B08A7E8954404BAAA4C7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03BD784E13C25B5027F43562952A887 /* String.swift */; };
+		0BF33FD0B0062F9AF46E88467E790423 /* SwiftOSC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF3CB2296DEAD4FC4E79677D62F1471 /* SwiftOSC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		110B5A6D92CF971CC5A7E855F63CD19E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D2BBBB45518464B8978CD504681E15 /* Extensions.swift */; };
+		2E174C764B26EEE713437E5E98BC19A3 /* OSCAddressPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DE9D35D429A6BE9922270BF36505D /* OSCAddressPattern.swift */; };
+		376176958B0C1E3014C3163A77357B4D /* OSCAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A007755EAD6E19D4D0B6256A640934 /* OSCAddress.swift */; };
+		37B7A08D4F9F7B3EB981B48373B4F1C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		38082847172AF972EF55FFE01D74B094 /* SwiftOSC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE84906606BB2FB139328222E1F3D72 /* SwiftOSC-dummy.m */; };
+		3A1E6D44EC201150F004220DCAC41789 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9124FBD313DBD003F7C09D875E39F /* Blob.swift */; };
+		4A9214789845F625B35268BDCE886A62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		70C985B2EE4BF0D8600605813825EC42 /* SwiftOSC.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A55C51CE9BB0DF5C5FE593320B6911 /* SwiftOSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73474820911076AEE0AABB70BA5C1C8C /* OSCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA825DD56DF6FE9C73AA90C8F9FBA15A /* OSCMessage.swift */; };
+		78E83C0FE376AC473442ECE96A59544D /* OSCTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E2A32C992F6BA6407834E717D8DDF5 /* OSCTypeProtocol.swift */; };
+		8D10DF288937C9EDE13B066BD8437C6A /* Timetag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073CB9C07D56E2EE5B8E0E25213D52CD /* Timetag.swift */; };
+		9820FD199B945681E3A5217377371BCB /* Pods-sensaOSCdemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE231E40BD766A62BE2F9DF3716305F /* Pods-sensaOSCdemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E491F79E8C5D65EA6B65BE5F41516F /* OSCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83E22C1D351CFA8C396F0253CFDC975 /* OSCClient.swift */; };
+		AE6AE1D8522AC545EBC713AEC7B0AC68 /* OSCElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796A4FA8F62F55ABF89178AAC14367E2 /* OSCElementProtocol.swift */; };
+		B3C00F2E8C1CF655C7358AF3EC351E9A /* Pods-sensaOSCdemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 287DD3EB468AB3639159CE0DAE38122C /* Pods-sensaOSCdemo-dummy.m */; };
+		B74020BFA6CBFBADB98FC5651AEC980F /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74742249C02AC66A6990DC1678B02EA /* ysocket.swift */; };
+		B8D5ABBA0DEB8447E70F73BDFE0B995E /* OSCServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE9BC54A47E5C7273D447E8C519FE1 /* OSCServer.swift */; };
+		CB73CCF06426ABDCDE7C14FA642A03AB /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEDBC83C8847D5D5C8F81907DA7572E /* yudpsocket.swift */; };
+		D3D3532706490CC14C41E6BA6655B539 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29883E7E1C3DAFC666BC0973816E69B /* Timer.swift */; };
+		D935EB01E623FC6C777BD796094D4C89 /* Impulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487FB4C05D917AAC08CF313358644968 /* Impulse.swift */; };
+		DB7E725538BF3772AD5338F3FD3C0E3C /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19CF06B25954448A51E4F82F3676B0 /* Float.swift */; };
+		EBBC4805E4E48239063C9E41BD195BC7 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = FEA0FB0ABB2D4FBAE96062A94BE3C4E3 /* yudpsocket.c */; };
+		F86C0D96AC6ECB69A3A39E59273FB324 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833D0B7D5C04C80F348322458E50E4C /* Int.swift */; };
+		FA048C5ABDF639F2A40A8463249CA537 /* OSCBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242B9E361156215724CC80286CABA61E /* OSCBundle.swift */; };
+		FF71EC17446E3C3B8432768F9DC084BE /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2729FFF1BF0A188B5701BC92DDF9D5 /* Bool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB04832E122EEA7BD4AB79B5A21E71EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804E587C93734951BD111270BEEB128A;
+			remoteInfo = SwiftOSC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05BC9CA7EECC2206714ADB404D7EFEED /* Pods_sensaOSCdemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_sensaOSCdemo.framework; path = "Pods-sensaOSCdemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		073CB9C07D56E2EE5B8E0E25213D52CD /* Timetag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timetag.swift; path = Framework/SwiftOSC/Types/Timetag.swift; sourceTree = "<group>"; };
+		08D2BBBB45518464B8978CD504681E15 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Framework/SwiftOSC/Helpers/Extensions.swift; sourceTree = "<group>"; };
+		242B9E361156215724CC80286CABA61E /* OSCBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCBundle.swift; path = Framework/SwiftOSC/Elements/OSCBundle.swift; sourceTree = "<group>"; };
+		287DD3EB468AB3639159CE0DAE38122C /* Pods-sensaOSCdemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sensaOSCdemo-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32E3F303ABD194E27AFD0A71136E956E /* SwiftOSC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOSC.xcconfig; sourceTree = "<group>"; };
+		42A007755EAD6E19D4D0B6256A640934 /* OSCAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCAddress.swift; path = Framework/SwiftOSC/Addresses/OSCAddress.swift; sourceTree = "<group>"; };
+		42E2A32C992F6BA6407834E717D8DDF5 /* OSCTypeProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCTypeProtocol.swift; path = Framework/SwiftOSC/Types/OSCTypeProtocol.swift; sourceTree = "<group>"; };
+		4321245A6C142794886DEE2CC83C4C4E /* SwiftOSC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftOSC.framework; path = SwiftOSC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C9124FBD313DBD003F7C09D875E39F /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Framework/SwiftOSC/Types/Blob.swift; sourceTree = "<group>"; };
+		487FB4C05D917AAC08CF313358644968 /* Impulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Impulse.swift; path = Framework/SwiftOSC/Types/Impulse.swift; sourceTree = "<group>"; };
+		59DE6C01073882A610F5EF97C4224342 /* Pods-sensaOSCdemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sensaOSCdemo-Info.plist"; sourceTree = "<group>"; };
+		796A4FA8F62F55ABF89178AAC14367E2 /* OSCElementProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCElementProtocol.swift; path = Framework/SwiftOSC/Elements/OSCElementProtocol.swift; sourceTree = "<group>"; };
+		8833D0B7D5C04C80F348322458E50E4C /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Framework/SwiftOSC/Types/Int.swift; sourceTree = "<group>"; };
+		8C2729FFF1BF0A188B5701BC92DDF9D5 /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Framework/SwiftOSC/Types/Bool.swift; sourceTree = "<group>"; };
+		9511D688ACAB944FA35588B55F505FCD /* SwiftOSC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOSC-prefix.pch"; sourceTree = "<group>"; };
+		9AE84906606BB2FB139328222E1F3D72 /* SwiftOSC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftOSC-dummy.m"; sourceTree = "<group>"; };
+		9B4DE9D35D429A6BE9922270BF36505D /* OSCAddressPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCAddressPattern.swift; path = Framework/SwiftOSC/Addresses/OSCAddressPattern.swift; sourceTree = "<group>"; };
+		9CF3CB2296DEAD4FC4E79677D62F1471 /* SwiftOSC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOSC-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4B34043B7C509D3B6B3BAFCF8A38630 /* SwiftOSC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftOSC.modulemap; sourceTree = "<group>"; };
+		AA19CF06B25954448A51E4F82F3676B0 /* Float.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Float.swift; path = Framework/SwiftOSC/Types/Float.swift; sourceTree = "<group>"; };
+		AA825DD56DF6FE9C73AA90C8F9FBA15A /* OSCMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCMessage.swift; path = Framework/SwiftOSC/Elements/OSCMessage.swift; sourceTree = "<group>"; };
+		ACEE9BC54A47E5C7273D447E8C519FE1 /* OSCServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCServer.swift; path = Framework/SwiftOSC/Communication/OSCServer.swift; sourceTree = "<group>"; };
+		B38402A49DF3188AD8FAC87B37E5DDF4 /* Pods-sensaOSCdemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-sensaOSCdemo.modulemap"; sourceTree = "<group>"; };
+		B6FC2805E50ECB220616E37B766176C1 /* SwiftOSC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftOSC-Info.plist"; sourceTree = "<group>"; };
+		BAEDBC83C8847D5D5C8F81907DA7572E /* yudpsocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = yudpsocket.swift; path = Framework/SwiftOSC/Communication/ysocket/yudpsocket.swift; sourceTree = "<group>"; };
+		D29883E7E1C3DAFC666BC0973816E69B /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Framework/SwiftOSC/Helpers/Timer.swift; sourceTree = "<group>"; };
+		D74742249C02AC66A6990DC1678B02EA /* ysocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ysocket.swift; path = Framework/SwiftOSC/Communication/ysocket/ysocket.swift; sourceTree = "<group>"; };
+		D83E22C1D351CFA8C396F0253CFDC975 /* OSCClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OSCClient.swift; path = Framework/SwiftOSC/Communication/OSCClient.swift; sourceTree = "<group>"; };
+		DB951D9EC2E480FDAEF80D4A9924106F /* Pods-sensaOSCdemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sensaOSCdemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE8916C974E5A9150FA8816BF59089F6 /* Pods-sensaOSCdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sensaOSCdemo.release.xcconfig"; sourceTree = "<group>"; };
+		DF2B6678C94A49CA9B49020A1B72038F /* Pods-sensaOSCdemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sensaOSCdemo-frameworks.sh"; sourceTree = "<group>"; };
+		E8A55C51CE9BB0DF5C5FE593320B6911 /* SwiftOSC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftOSC.h; path = Framework/iOS/SwiftOSC.h; sourceTree = "<group>"; };
+		ED029A48AEC63478990150EDBB512019 /* Pods-sensaOSCdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sensaOSCdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ED72B7F7394800C42C25BBBC9D7B6D0E /* Pods-sensaOSCdemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-sensaOSCdemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F03BD784E13C25B5027F43562952A887 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Framework/SwiftOSC/Types/String.swift; sourceTree = "<group>"; };
+		FEA0FB0ABB2D4FBAE96062A94BE3C4E3 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Framework/SwiftOSC/Communication/ysocket/yudpsocket.c; sourceTree = "<group>"; };
+		FEE231E40BD766A62BE2F9DF3716305F /* Pods-sensaOSCdemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-sensaOSCdemo-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E69BF30324C2330BD12C2D83B19998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B7A08D4F9F7B3EB981B48373B4F1C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E263D18A25045FFBA8EDFD82EB76D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A9214789845F625B35268BDCE886A62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E459AEC4CF9BE145B7F709A7E95B348 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6150CCF224FBF200FA7207749CD0EFE1 /* Pods-sensaOSCdemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DB8E873E899C7FB03856001F85BCBE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B1C551D403E42A396BAD03C52F6295C /* SwiftOSC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6150CCF224FBF200FA7207749CD0EFE1 /* Pods-sensaOSCdemo */ = {
+			isa = PBXGroup;
+			children = (
+				B38402A49DF3188AD8FAC87B37E5DDF4 /* Pods-sensaOSCdemo.modulemap */,
+				ED72B7F7394800C42C25BBBC9D7B6D0E /* Pods-sensaOSCdemo-acknowledgements.markdown */,
+				DB951D9EC2E480FDAEF80D4A9924106F /* Pods-sensaOSCdemo-acknowledgements.plist */,
+				287DD3EB468AB3639159CE0DAE38122C /* Pods-sensaOSCdemo-dummy.m */,
+				DF2B6678C94A49CA9B49020A1B72038F /* Pods-sensaOSCdemo-frameworks.sh */,
+				59DE6C01073882A610F5EF97C4224342 /* Pods-sensaOSCdemo-Info.plist */,
+				FEE231E40BD766A62BE2F9DF3716305F /* Pods-sensaOSCdemo-umbrella.h */,
+				ED029A48AEC63478990150EDBB512019 /* Pods-sensaOSCdemo.debug.xcconfig */,
+				DE8916C974E5A9150FA8816BF59089F6 /* Pods-sensaOSCdemo.release.xcconfig */,
+			);
+			name = "Pods-sensaOSCdemo";
+			path = "Target Support Files/Pods-sensaOSCdemo";
+			sourceTree = "<group>";
+		};
+		61A00140E9D5FB10697007D4476174A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05BC9CA7EECC2206714ADB404D7EFEED /* Pods_sensaOSCdemo.framework */,
+				4321245A6C142794886DEE2CC83C4C4E /* SwiftOSC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1C551D403E42A396BAD03C52F6295C /* SwiftOSC */ = {
+			isa = PBXGroup;
+			children = (
+				45C9124FBD313DBD003F7C09D875E39F /* Blob.swift */,
+				8C2729FFF1BF0A188B5701BC92DDF9D5 /* Bool.swift */,
+				08D2BBBB45518464B8978CD504681E15 /* Extensions.swift */,
+				AA19CF06B25954448A51E4F82F3676B0 /* Float.swift */,
+				487FB4C05D917AAC08CF313358644968 /* Impulse.swift */,
+				8833D0B7D5C04C80F348322458E50E4C /* Int.swift */,
+				42A007755EAD6E19D4D0B6256A640934 /* OSCAddress.swift */,
+				9B4DE9D35D429A6BE9922270BF36505D /* OSCAddressPattern.swift */,
+				242B9E361156215724CC80286CABA61E /* OSCBundle.swift */,
+				D83E22C1D351CFA8C396F0253CFDC975 /* OSCClient.swift */,
+				796A4FA8F62F55ABF89178AAC14367E2 /* OSCElementProtocol.swift */,
+				AA825DD56DF6FE9C73AA90C8F9FBA15A /* OSCMessage.swift */,
+				ACEE9BC54A47E5C7273D447E8C519FE1 /* OSCServer.swift */,
+				42E2A32C992F6BA6407834E717D8DDF5 /* OSCTypeProtocol.swift */,
+				F03BD784E13C25B5027F43562952A887 /* String.swift */,
+				E8A55C51CE9BB0DF5C5FE593320B6911 /* SwiftOSC.h */,
+				D29883E7E1C3DAFC666BC0973816E69B /* Timer.swift */,
+				073CB9C07D56E2EE5B8E0E25213D52CD /* Timetag.swift */,
+				D74742249C02AC66A6990DC1678B02EA /* ysocket.swift */,
+				FEA0FB0ABB2D4FBAE96062A94BE3C4E3 /* yudpsocket.c */,
+				BAEDBC83C8847D5D5C8F81907DA7572E /* yudpsocket.swift */,
+				EFC12EA986A477C6A7C7F1B92307A419 /* Support Files */,
+			);
+			name = SwiftOSC;
+			path = SwiftOSC;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3DB8E873E899C7FB03856001F85BCBE4 /* Pods */,
+				61A00140E9D5FB10697007D4476174A3 /* Products */,
+				2E459AEC4CF9BE145B7F709A7E95B348 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFC12EA986A477C6A7C7F1B92307A419 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4B34043B7C509D3B6B3BAFCF8A38630 /* SwiftOSC.modulemap */,
+				32E3F303ABD194E27AFD0A71136E956E /* SwiftOSC.xcconfig */,
+				9AE84906606BB2FB139328222E1F3D72 /* SwiftOSC-dummy.m */,
+				B6FC2805E50ECB220616E37B766176C1 /* SwiftOSC-Info.plist */,
+				9511D688ACAB944FA35588B55F505FCD /* SwiftOSC-prefix.pch */,
+				9CF3CB2296DEAD4FC4E79677D62F1471 /* SwiftOSC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftOSC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02EA81376F87CEDBAD6C2224A54FA78C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF33FD0B0062F9AF46E88467E790423 /* SwiftOSC-umbrella.h in Headers */,
+				70C985B2EE4BF0D8600605813825EC42 /* SwiftOSC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16427E43CC562858A0D974E6416161A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9820FD199B945681E3A5217377371BCB /* Pods-sensaOSCdemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		804E587C93734951BD111270BEEB128A /* SwiftOSC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E044C3287D91BF9F2837E02DE3D26D6A /* Build configuration list for PBXNativeTarget "SwiftOSC" */;
+			buildPhases = (
+				02EA81376F87CEDBAD6C2224A54FA78C /* Headers */,
+				1977AF664E9A819106F6FF23537B6658 /* Sources */,
+				89E263D18A25045FFBA8EDFD82EB76D3 /* Frameworks */,
+				D878363734E6A8C559167F8ECCB115FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOSC;
+			productName = SwiftOSC;
+			productReference = 4321245A6C142794886DEE2CC83C4C4E /* SwiftOSC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8582EAC6668B214BF2AD6E817562EFF1 /* Pods-sensaOSCdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 828468381698F6B8BC667E7E76A98431 /* Build configuration list for PBXNativeTarget "Pods-sensaOSCdemo" */;
+			buildPhases = (
+				16427E43CC562858A0D974E6416161A0 /* Headers */,
+				2B53F51FD763EA0F320D3695E5EEB03D /* Sources */,
+				25E69BF30324C2330BD12C2D83B19998 /* Frameworks */,
+				F3334D5AAF075225A4FBFD4C5A8F033B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F177AA7BA1E89584D5EEC8A10060B835 /* PBXTargetDependency */,
+			);
+			name = "Pods-sensaOSCdemo";
+			productName = "Pods-sensaOSCdemo";
+			productReference = 05BC9CA7EECC2206714ADB404D7EFEED /* Pods_sensaOSCdemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 61A00140E9D5FB10697007D4476174A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8582EAC6668B214BF2AD6E817562EFF1 /* Pods-sensaOSCdemo */,
+				804E587C93734951BD111270BEEB128A /* SwiftOSC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D878363734E6A8C559167F8ECCB115FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3334D5AAF075225A4FBFD4C5A8F033B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1977AF664E9A819106F6FF23537B6658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1E6D44EC201150F004220DCAC41789 /* Blob.swift in Sources */,
+				FF71EC17446E3C3B8432768F9DC084BE /* Bool.swift in Sources */,
+				110B5A6D92CF971CC5A7E855F63CD19E /* Extensions.swift in Sources */,
+				DB7E725538BF3772AD5338F3FD3C0E3C /* Float.swift in Sources */,
+				D935EB01E623FC6C777BD796094D4C89 /* Impulse.swift in Sources */,
+				F86C0D96AC6ECB69A3A39E59273FB324 /* Int.swift in Sources */,
+				376176958B0C1E3014C3163A77357B4D /* OSCAddress.swift in Sources */,
+				2E174C764B26EEE713437E5E98BC19A3 /* OSCAddressPattern.swift in Sources */,
+				FA048C5ABDF639F2A40A8463249CA537 /* OSCBundle.swift in Sources */,
+				A1E491F79E8C5D65EA6B65BE5F41516F /* OSCClient.swift in Sources */,
+				AE6AE1D8522AC545EBC713AEC7B0AC68 /* OSCElementProtocol.swift in Sources */,
+				73474820911076AEE0AABB70BA5C1C8C /* OSCMessage.swift in Sources */,
+				B8D5ABBA0DEB8447E70F73BDFE0B995E /* OSCServer.swift in Sources */,
+				78E83C0FE376AC473442ECE96A59544D /* OSCTypeProtocol.swift in Sources */,
+				0742121D09C5B08A7E8954404BAAA4C7 /* String.swift in Sources */,
+				38082847172AF972EF55FFE01D74B094 /* SwiftOSC-dummy.m in Sources */,
+				D3D3532706490CC14C41E6BA6655B539 /* Timer.swift in Sources */,
+				8D10DF288937C9EDE13B066BD8437C6A /* Timetag.swift in Sources */,
+				B74020BFA6CBFBADB98FC5651AEC980F /* ysocket.swift in Sources */,
+				EBBC4805E4E48239063C9E41BD195BC7 /* yudpsocket.c in Sources */,
+				CB73CCF06426ABDCDE7C14FA642A03AB /* yudpsocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B53F51FD763EA0F320D3695E5EEB03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C00F2E8C1CF655C7358AF3EC351E9A /* Pods-sensaOSCdemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F177AA7BA1E89584D5EEC8A10060B835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOSC;
+			target = 804E587C93734951BD111270BEEB128A /* SwiftOSC */;
+			targetProxy = CB04832E122EEA7BD4AB79B5A21E71EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12E9CA539257AC3364167C28784928EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E3F303ABD194E27AFD0A71136E956E /* SwiftOSC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOSC/SwiftOSC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOSC/SwiftOSC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftOSC/SwiftOSC.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOSC;
+				PRODUCT_NAME = SwiftOSC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44669A255BC2F6A21155504052CD71E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E3F303ABD194E27AFD0A71136E956E /* SwiftOSC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOSC/SwiftOSC-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOSC/SwiftOSC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftOSC/SwiftOSC.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOSC;
+				PRODUCT_NAME = SwiftOSC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64E5A18B03A50619E3102F77561772A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED029A48AEC63478990150EDBB512019 /* Pods-sensaOSCdemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sensaOSCdemo/Pods-sensaOSCdemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sensaOSCdemo/Pods-sensaOSCdemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE050A984FD13F0A5F964B047D7DA6AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8916C974E5A9150FA8816BF59089F6 /* Pods-sensaOSCdemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-sensaOSCdemo/Pods-sensaOSCdemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-sensaOSCdemo/Pods-sensaOSCdemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		828468381698F6B8BC667E7E76A98431 /* Build configuration list for PBXNativeTarget "Pods-sensaOSCdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E5A18B03A50619E3102F77561772A1 /* Debug */,
+				BE050A984FD13F0A5F964B047D7DA6AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E044C3287D91BF9F2837E02DE3D26D6A /* Build configuration list for PBXNativeTarget "SwiftOSC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E9CA539257AC3364167C28784928EE /* Debug */,
+				44669A255BC2F6A21155504052CD71E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

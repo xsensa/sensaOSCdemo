@@ -1,0 +1,16 @@
+PODS:
+  - SwiftOSC (1.2.6)
+
+DEPENDENCIES:
+  - SwiftOSC
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftOSC
+
+SPEC CHECKSUMS:
+  SwiftOSC: 74d0a52556a7169215b6150f34ae66124311af2a
+
+PODFILE CHECKSUM: 557caa9aa0c362c3ef5a338029c073d7cce4a929
+
+COCOAPODS: 1.6.1

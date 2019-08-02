@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M6w-gF-u0s">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Hub View Controller-->
+        <scene sceneID="Op1-1V-gso">
+            <objects>
+                <viewController storyboardIdentifier="HubViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pCN-w6-fbh" customClass="HubViewController" customModule="sensaOSCdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovG-rf-4Zt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch each bar to learn about different brain networks. Network is active when bar is above the threshold line." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJo-fc-ZyL" userLabel="Explanation">
+                                <rect key="frame" x="0.0" y="208" width="320" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="AGA-e7-5qS" userLabel="width = 320"/>
+                                    <constraint firstAttribute="height" constant="83" id="ec1-JT-KFq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNe-Px-BlF" customClass="DynamicBarGraphView" customModule="sensaOSCdemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="208" width="320" height="350"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="T5h-Mz-c1K"/>
+                                    <constraint firstAttribute="width" constant="320" id="mpf-sO-Ks8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3P-Fo-FxC" userLabel="BackBut">
+                                <rect key="frame" x="16" y="18" width="50" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Kor-mc-wRb"/>
+                                    <constraint firstAttribute="height" constant="60" id="WSl-lc-Y3b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBack:" destination="pCN-w6-fbh" eventType="touchUpInside" id="bJw-xk-v32"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All users appear below. Tap to watch live feed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCx-xZ-pdh">
+                                <rect key="frame" x="144.5" y="35" width="125" height="28"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-YN-PYV" customClass="RoundedButton" customModule="sensaOSCdemo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="175" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="RdG-za-lVv"/>
+                                    <constraint firstAttribute="width" constant="118" id="XsB-tu-Fk0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="SETTINGS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSettings:" destination="pCN-w6-fbh" eventType="touchUpInside" id="13s-Gt-TIs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0084716547279999992" green="0.1375592947" blue="0.36667931079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qML-oC-NqL" firstAttribute="bottom" secondItem="iNe-Px-BlF" secondAttribute="bottom" constant="10" id="8F7-AN-CqS"/>
+                            <constraint firstItem="vzW-YN-PYV" firstAttribute="leading" secondItem="iNe-Px-BlF" secondAttribute="leading" constant="10" id="AKl-ei-eam"/>
+                            <constraint firstItem="zJo-fc-ZyL" firstAttribute="top" secondItem="vzW-YN-PYV" secondAttribute="bottom" constant="2" id="DJJ-Eo-yO9"/>
+                            <constraint firstItem="zJo-fc-ZyL" firstAttribute="centerX" secondItem="ovG-rf-4Zt" secondAttribute="centerX" id="Gbs-aZ-kJ0"/>
+                            <constraint firstItem="zJo-fc-ZyL" firstAttribute="top" secondItem="iNe-Px-BlF" secondAttribute="top" id="PG4-iv-zDb"/>
+                            <constraint firstItem="b3P-Fo-FxC" firstAttribute="leading" secondItem="qML-oC-NqL" secondAttribute="leading" constant="16" id="RxZ-Dj-Nxt"/>
+                            <constraint firstItem="xCx-xZ-pdh" firstAttribute="top" secondItem="qML-oC-NqL" secondAttribute="top" constant="15" id="Tj7-2v-Qgj"/>
+                            <constraint firstItem="qML-oC-NqL" firstAttribute="trailing" secondItem="xCx-xZ-pdh" secondAttribute="trailing" constant="50.5" id="U1f-UZ-jGP"/>
+                            <constraint firstItem="b3P-Fo-FxC" firstAttribute="top" secondItem="ovG-rf-4Zt" secondAttribute="top" constant="18" id="cmS-be-Tbs"/>
+                            <constraint firstItem="iNe-Px-BlF" firstAttribute="centerX" secondItem="ovG-rf-4Zt" secondAttribute="centerX" id="u0W-sW-ywU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qML-oC-NqL"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="Message" destination="zJo-fc-ZyL" id="UZ2-C0-9g3"/>
+                        <outlet property="RecevingLab" destination="xCx-xZ-pdh" id="bab-ny-LPq"/>
+                        <outlet property="barGraphView" destination="iNe-Px-BlF" id="E3F-WG-uSS"/>
+                        <outlet property="settingsBut" destination="vzW-YN-PYV" id="FMa-Ri-SC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eK3-nO-kKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352.5" y="-54.929577464788736"/>
+        </scene>
+        <!--InitViewController-->
+        <scene sceneID="04x-dK-b3H">
+            <objects>
+                <viewController storyboardIdentifier="InitViewController" title="InitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wZ0-yb-fhN" customClass="InitViewController" customModule="sensaOSCdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFg-FP-6N6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-0N-sSP">
+                                <rect key="frame" x="25" y="212" width="270" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your IP address is:  xxx.xxx.xx.x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86k-aK-ssc">
+                                        <rect key="frame" x="15" y="-5" width="244" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.043506421150000002" green="0.8834409714" blue="0.86606782670000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4W-jA-6FQ">
+                                        <rect key="frame" x="39" y="111" width="200" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="How to set up your code">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onLearn:" destination="wZ0-yb-fhN" eventType="touchUpInside" id="wce-N5-Tfp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Ol2-Ur-Tht"/>
+                                    <constraint firstAttribute="height" constant="144" id="aog-IA-7Sj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maL-jO-JmO" userLabel="AboutBut">
+                                <rect key="frame" x="50" y="19" width="81" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="JYD-O4-CQs"/>
+                                    <constraint firstAttribute="height" constant="85" id="sMN-bC-e3w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="About"/>
+                                <connections>
+                                    <action selector="onAbout:" destination="wZ0-yb-fhN" eventType="touchUpInside" id="9Mc-JY-IiE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-3N-nOL" customClass="RoundedButton" customModule="sensaOSCdemo" customModuleProvider="target">
+                                <rect key="frame" x="110" y="443" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1Sw-XW-B0c"/>
+                                    <constraint firstAttribute="height" constant="40" id="J0I-Wl-A6t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="13"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.004670944065" green="0.089004211129999997" blue="0.15134221319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pCN-w6-fbh" kind="show" id="3tQ-PZ-QpE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0084716547279999992" green="0.1375592947" blue="0.36667931079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="maL-jO-JmO" firstAttribute="leading" secondItem="oVq-z2-1IK" secondAttribute="leading" constant="50" id="G70-pN-05R"/>
+                            <constraint firstItem="oVq-z2-1IK" firstAttribute="bottom" secondItem="rpk-3N-nOL" secondAttribute="bottom" constant="85" id="IHr-iy-04A"/>
+                            <constraint firstItem="rpk-3N-nOL" firstAttribute="centerX" secondItem="PFg-FP-6N6" secondAttribute="centerX" id="V5E-bA-wI3"/>
+                            <constraint firstItem="ATe-0N-sSP" firstAttribute="centerX" secondItem="PFg-FP-6N6" secondAttribute="centerX" id="YCG-xA-CdH"/>
+                            <constraint firstItem="maL-jO-JmO" firstAttribute="top" secondItem="PFg-FP-6N6" secondAttribute="top" constant="19" id="m4a-77-2rZ"/>
+                            <constraint firstItem="ATe-0N-sSP" firstAttribute="centerY" secondItem="PFg-FP-6N6" secondAttribute="centerY" id="o3x-CU-Z8s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oVq-z2-1IK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oKP-di-Yr1"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="MsgLab" destination="86k-aK-ssc" id="5a9-rf-uF0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="svb-yp-mJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1186.875" y="-60.2112676056338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KIo-Hc-z2s">
+            <objects>
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6w-gF-u0s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nln-5Y-mu9">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wZ0-yb-fhN" kind="relationship" relationship="rootViewController" id="rFX-l6-VyF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwt-eT-9P9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2184.375" y="-60.2112676056338"/>
+        </scene>
+        <!--Training Settings-->
+        <scene sceneID="7SP-As-gzc">
+            <objects>
+                <tableViewController storyboardIdentifier="SettingsTableViewController" definesPresentationContext="YES" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TkS-if-hP4" userLabel="Training Settings" customClass="SettingsTableViewController" customModule="sensaOSCdemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="22" estimatedSectionHeaderHeight="1" sectionFooterHeight="22" id="s6c-Kg-cKr">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="560"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92468649150000004" green="0.92538815740000002" blue="0.92479509120000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="oscsettingcell" textLabel="9Mw-Hx-nws" style="IBUITableViewCellStyleDefault" id="g29-VF-Oqx">
+                                <rect key="frame" x="0.0" y="22" width="300" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g29-VF-Oqx" id="lwA-8B-NoV">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Mw-Hx-nws">
+                                            <rect key="frame" x="16" y="0.0" width="268" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TkS-if-hP4" id="wJq-ks-OVs"/>
+                            <outlet property="delegate" destination="TkS-if-hP4" id="jDi-u3-38j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="KHg-fs-5Rz">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7Ck-rY-l7X"/>
+                    </navigationItem>
+                    <value key="contentSizeForViewInPopover" type="size" width="280" height="300"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="560"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWV-Xc-4jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="-860"/>
+        </scene>
+    </scenes>
+</document>
