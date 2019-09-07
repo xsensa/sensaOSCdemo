@@ -166,7 +166,9 @@ class HubViewController: UIViewController, OSCServerDelegate , UIPopoverPresenta
                 let userview = userviews[userindex]
                 userview.alpha = 1
                 if userview.but.isSelected { // update graph
-                    barGraphView.redrawBar(i: netindex, yval:Float(brainval)!)
+                    if brainval != "NaN" {
+                        barGraphView.redrawBar(i: netindex, yval:Float(brainval)!)
+                    }
                 }
             }
             hubActivity[netindex][userindex] = brainval

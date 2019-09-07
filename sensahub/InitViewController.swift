@@ -38,7 +38,7 @@ class InitViewController: UIViewController,UIPopoverPresentationControllerDelega
        
         if let tmp = getIPAddressForCellOrWireless() {
             thisIP = tmp
-            MsgLab.text = "Your IP address is:\n\n\(thisIP)"
+            MsgLab.text = "This IP address is:\n\n\(thisIP)"
         }
             
         else { // we could not find ip address, so we issue warning
