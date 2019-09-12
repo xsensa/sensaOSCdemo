@@ -12,7 +12,7 @@ class InitViewController: UIViewController,UIPopoverPresentationControllerDelega
     @IBAction func onAbout(_ sender: Any) {
         
         
-       let msg = "Let users interact with your beautiful installations and apps using their brains.\n\nxSensa's powerful brain engine detects activation of 4 major networks in the brain. This demo app illustrates how to recieve live activation data from individual users over the internet."
+       let msg = "Let users interact with your beautiful installations and apps using their brainwaves.\n\nxSensa's powerful brain engine detects activation of 4 major networks in the brain. This demo app illustrates how to recieve live activation data from individual users over the internet."
         
         let alertController = UIAlertController(title: "Attention artists and developers!", message: msg, preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: nil))

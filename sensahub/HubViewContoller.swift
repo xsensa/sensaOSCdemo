@@ -81,14 +81,14 @@ class HubViewController: UIViewController, OSCServerDelegate , UIPopoverPresenta
        
         var hubNetMsgs = Array(repeating: "", count: networks.count) // hubActivity[nework][user]
         for n in 0..<networks.count {
-            for i in 0..<users.count{
+            for i in 0..<userviews.count{
                 if userviews[i].alpha > 0.3  { // take current network values data from active users
                     hubNetMsgs[n] += " \(senders[i]),\(hubActivity[n][i])"
                 }
             }
         }
         
-        for i in 0..<users.count {
+        for i in 0..<userviews.count {
             if userviews[i].alpha > 0.3  { // broadcast to active users only
                 let clientOSC = OSCClient(address: senders[i], port: 9000) // outgoing OSC
                 for n in 0..<networks.count {
